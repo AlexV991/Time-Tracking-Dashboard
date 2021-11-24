@@ -1,0 +1,447 @@
+@font-face {
+  font-family: Rubik;
+  src: url(https://fonts.google.com/specimen/Rubik);
+}
+
+body {
+  z-index: 2;
+  background-color: #0f1424;
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-family: Rubik;
+  font-weight: 300;
+}
+
+@media screen and (min-width: 800px) {
+  .App {
+    display: Grid;
+    -ms-grid-columns: (20vh)[4];
+        grid-template-columns: repeat(4, 20vh);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.card {
+  margin: 2vh auto auto auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 85%;
+}
+
+.card .headerCard {
+  position: relative;
+  border-radius: 15px;
+  height: 17vh;
+  color: inherit;
+  background-color: #5847eb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: -1vh;
+  font-family: Rubik;
+  font-weight: 300;
+}
+
+.card .headerCard div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.card .headerCard div img {
+  height: 10vh;
+}
+
+.card .headerCard div div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: Column;
+          flex-direction: Column;
+  position: relative;
+}
+
+.card .headerCard div div p {
+  width: 85%;
+  margin: 5px 0 5px 0;
+  opacity: 50%;
+  font-size: 15px;
+}
+
+.card .headerCard div div h2 {
+  font-size: 30px;
+  font-weight: 300;
+  margin: 0 0 0 10px;
+}
+
+.card .lowerCard {
+  height: 7vh;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  color: inherit;
+  background-color: #1c1f4a;
+}
+
+.card .lowerCard div {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card .lowerCard div a {
+  opacity: 50%;
+  cursor: pointer;
+  pointer-events: all;
+}
+
+.card .lowerCard div a:hover {
+  opacity: 100% !important;
+}
+
+@media screen and (min-width: 800px) {
+  .card {
+    padding: 0;
+    grid-row: span 2;
+    height: 100%;
+  }
+  .card .headerCard {
+    height: 23vh;
+    padding: 2vh 0 2vh 2vh;
+  }
+  .card .headerCard .person {
+    display: inline-block;
+    padding: 0;
+  }
+  .card .headerCard .person img {
+    height: 6vh;
+  }
+  .card .headerCard .person div {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    margin-top: 2vh;
+  }
+  .card .headerCard .person div h2 {
+    margin: 0;
+  }
+  .card .headerCard .person div p {
+    margin: 0;
+  }
+  .lowerCard {
+    height: 10vh !important;
+  }
+  .lowerCard div {
+    height: 8vh !important;
+    font-size: 15px;
+    -webkit-box-align: start !important;
+        -ms-flex-align: start !important;
+            align-items: flex-start !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 1.5vh 0 1.5vh 2vh;
+  }
+}
+
+.fullCard {
+  width: 85%;
+  margin: 2vh auto 0 auto;
+}
+
+.fullCard svg {
+  z-index: auto;
+  position: relative;
+  margin-right: 1.2vh;
+  top: -1vh;
+}
+
+.lowerWorkCard {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  background-color: #1c1f4a;
+  margin-top: -1.5vh;
+  border-radius: 15px;
+}
+
+.lowerWorkCard .topSideWorkCard {
+  margin-top: 3vh;
+  width: 85%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.lowerWorkCard .topSideWorkCard .Work {
+  font-size: 18px;
+  font-weight: 400;
+  height: 4vh;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.lowerWorkCard .topSideWorkCard .dots {
+  opacity: 80%;
+  height: 4vh;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.lowerWorkCard .topSideWorkCard .dots svg {
+  pointer-events: all;
+  cursor: pointer;
+}
+
+.lowerWorkCard .topSideWorkCard .dots svg path:hover {
+  fill: white;
+}
+
+.lowerWorkCard .bottomSideWorkCard {
+  width: 85%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  margin-top: -2vh;
+}
+
+.lowerWorkCard .bottomSideWorkCard .p1 {
+  font-size: 30px;
+  width: 50%;
+}
+
+.lowerWorkCard .bottomSideWorkCard .p2 {
+  opacity: 80%;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+@media screen and (min-width: 800px) {
+  .fullCard {
+    width: 85%;
+    margin: 2vh auto 0 auto;
+  }
+  .fullCard svg {
+    position: inline;
+    margin-right: 1.2vh;
+    top: -1vh;
+  }
+  .lowerWorkCard .topSideWorkCard {
+    position: relative;
+    margin-top: 0;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    margin-top: 1vh;
+  }
+  .lowerWorkCard .topSideWorkCard .Work {
+    font-size: 17px;
+    font-weight: 400;
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .lowerWorkCard .topSideWorkCard .dots {
+    padding-top: 5px;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+  .lowerWorkCard .bottomSideWorkCard {
+    width: 85%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .lowerWorkCard .bottomSideWorkCard .p1 {
+    margin: 2vh 0 0 0;
+    font-size: 40px;
+  }
+  .lowerWorkCard .bottomSideWorkCard .p2 {
+    margin: 0 0 2vh 0;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    opacity: 80%;
+    width: 100%;
+    font-size: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+#headerWorkCard {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  height: 7vh;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  background-color: rgba(239, 137, 78, 0.897);
+  overflow: hidden;
+}
+
+#headerStudyCard {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  height: 7vh;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  background-color: #ff5c7c;
+  overflow: hidden;
+}
+
+#headerSocialCard {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  height: 7vh;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  background-color: #7536d3;
+  overflow: hidden;
+}
+
+#headerSelfCareCard {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  height: 7vh;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  background-color: #f1c65b;
+  overflow: hidden;
+}
+
+#headerGameCard {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  height: 7vh;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  background-color: #56c2e6;
+  overflow: hidden;
+}
+
+#headerExerciseCard {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 7vh;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  background-color: #4acf81;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 800px) {
+  #headerWorkCard, #headerStudyCard, #headerSocialCard, #headerSelfCareCard, #headerGameCard, #headerExerciseCard {
+    height: 5vh;
+  }
+}
+/*# sourceMappingURL=style.css.map */
